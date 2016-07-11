@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="paint.css" media="all"/>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="paint.js"></script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<ul id="tools">
+		<li><button id="clearButton" type="button">Clear!</button></li>
+		<li><button id="lineButton" type="button">Line</button></li>
+		<li><button id="rectangleButton" type="button">Rectangle</button></li>
+		<li><button id="triangleButton" type="button">Triangle</button></li>
+		<li><button id="mouseButton" type="button">Mouse</button></li>
+		<li><button id="copyButton" type="button">copy</button></li>
+		<li><button id="pasteButton" type="button">paste</button></li>
+		<li><button id="eraseButton" type="button">erase</button></li>
+		<li><button id="resizeAddButton" type="button">resize+</button></li>
+		<li><button id="resizeMinusButton" type="button">resize-</button></li>
+		<li>Outline width: <input id="outlineWidthInput" type="number" value="1" min="0" step="1" pattern="\d+"> </input></li>
+		<li>Fill colour:
+			<select id="fillColorMenu">
+				<option value="red">red</option>
+				<option value="orange">orange</option>
+				<option value="yellow">yellow</option>
+				<option value="#3BDB3E">green</option>
+				<option value="blue">blue</option>
+				<option value="purple">purple</option>
+				<option value="black">black</option>
+				<option value="white">white</option>
+				<option value="gray">gray</option>
+				<option value="pink">pink</option>
+				<option value="brown">brown</option>
+				<option value="skyblue">skyblue</option>
+			</select>
+		</li>
+		<li>Outline colour: 
+			<select id="outlineColorMenu">
+				<option value="black">black</option>
+				<option value="orange">orange</option>
+				<option value="yellow">yellow</option>
+				<option value="#3BDB3E">green</option>
+				<option value="blue">blue</option>
+				<option value="purple">purple</option>
+				<option value="red">red</option>
+				<option value="white">white</option>
+				<option value="gray">gray</option>
+				<option value="pink">pink</option>
+				<option value="brown">brown</option>
+				<option value="skyblue">skyblue</option>
+			</select>
+		</li>
+	</ul>
+<!-- 	<ul id="shapeInfoToolbar">
+		Selected shape:
+		<li class="shapeInfo" id="outlineColourInfo">Outline colour: 
+			<div class="colourDiv"></div>
+		</li>
+		<li class="shapeInfo" id="outlineWidthInfo">Outline width: 
+			<div class="colourDiv"></div>
+		</li>
+		<li class="shapeInfo" id="backgroundColourInfo">Background color: 
+			<div class="colourDiv"></div>
+		</li>
+	</ul> -->
+</body>
+</html>
